@@ -1,0 +1,43 @@
+[
+    {
+        "id": "s1",
+        "name": "Ananya",
+        "department": "Computer Science",
+        "semester": 5,
+        "marks": [
+            23,
+            45,
+            34,
+            43,
+            50
+        ],
+        "average": 39.0,
+        "grade": "C"
+    },
+    {
+        "id": "s2",
+        "name": "Aditya",
+        "department": "Computer Science",
+        "semester": 7,
+        "marks": [
+            23
+        ],
+        "average": 23.0,
+        "grade": "C"
+    },
+    {
+        "id": "s3",
+        "name": "Rahul",
+        "department": "Computer Science",
+        "semester": 6,
+        "marks": [
+            24,
+            45,
+            43,
+            34,
+            50
+        ],
+        "average": 39.2,
+        "grade": "C"
+    }
+]
