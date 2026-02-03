@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.11.0 on win32)" generated="2026-02-02T18:22:11.726181" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Form" source="C:\Users\Ravinesh\PycharmProjects\PythonProject\Day-14Q2\Day-14Q2\test_form.robot">
+<kw name="Open Test Browser" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-02T18:22:12.285830" level="INFO">Opening browser 'edge' to base url 'https://demoqa.com/automation-practice-form'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-02T18:22:12.256250" elapsed="13.409007"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-02T18:22:25.666267" elapsed="0.385814"/>
+</kw>
+<status status="PASS" start="2026-02-02T18:22:12.256250" elapsed="13.795831"/>
+</kw>
+<test id="s1-t1" name="Submit Practice Form" line="13">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-02T18:22:26.068340" level="INFO">Executing JavaScript:
+document.querySelectorAll("iframe").forEach(el =&gt; el.remove());
+Without any arguments.</msg>
+<arg>document.querySelectorAll("iframe").forEach(el =&gt; el.remove());</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-02T18:22:26.066286" elapsed="1.300349"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T18:22:27.382708" level="INFO">Typing text 'Ravinesh' into text field 'id=firstName'.</msg>
+<arg>id=firstName</arg>
+<arg>Ravinesh</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T18:22:27.382708" elapsed="0.804269"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T18:22:28.191991" level="INFO">Typing text 'Tiwari' into text field 'id=lastName'.</msg>
+<arg>id=lastName</arg>
+<arg>Tiwari</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T18:22:28.191991" elapsed="0.620016"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T18:22:28.813993" level="INFO">Typing text 'ravinesh@test.com' into text field 'id=userEmail'.</msg>
+<arg>id=userEmail</arg>
+<arg>ravinesh@test.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T18:22:28.813198" elapsed="0.492885"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//label[text()='Male']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-02-02T18:22:29.309166" elapsed="0.344769"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-02T18:22:30.657823" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-02T18:22:29.656005" elapsed="1.001818"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-02T18:22:30.660720" level="INFO">Executing JavaScript:
+document.querySelector("label[for='gender-radio-1']").click()
+Without any arguments.</msg>
+<arg>document.querySelector("label[for='gender-radio-1']").click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-02T18:22:30.659359" elapsed="0.046601"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T18:22:30.707466" level="INFO">Typing text '8948965454' into text field 'id=userNumber'.</msg>
+<arg>id=userNumber</arg>
+<arg>8948965454</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T18:22:30.707296" elapsed="0.445042"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-02T18:22:31.155116" level="INFO">Executing JavaScript:
+document.querySelector("label[for='hobbies-checkbox-1']").click()
+Without any arguments.</msg>
+<arg>document.querySelector("label[for='hobbies-checkbox-1']").click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-02T18:22:31.153810" elapsed="0.055855"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-02T18:22:31.213028" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-02T18:22:31.212137" elapsed="0.065991"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-02T18:22:32.280921" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-02T18:22:31.279937" elapsed="1.000984"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-02T18:22:32.280921" level="INFO">Clicking element 'id=state'.</msg>
+<arg>id=state</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T18:22:32.280921" elapsed="0.331777"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-02T18:22:32.616306" level="INFO">Clicking element 'xpath=//div[text()='NCR']'.</msg>
+<arg>xpath=//div[text()='NCR']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T18:22:32.612698" elapsed="0.289891"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-02T18:22:34.909069" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-02T18:22:32.906168" elapsed="2.006857"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-02-02T18:22:34.915548" level="INFO">Executing JavaScript:
+document.getElementById("submit").click()
+Without any arguments.</msg>
+<arg>document.getElementById("submit").click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-02-02T18:22:34.913025" elapsed="0.158242"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-02T18:22:37.094727" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-02T18:22:35.091954" elapsed="2.002773"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-02-02T18:22:37.195969" level="INFO">${modal_title} = Thanks for submitting the form</msg>
+<var>${modal_title}</var>
+<arg>id=example-modal-sizes-title-lg</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-02T18:22:37.096295" elapsed="0.099674"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${modal_title}</arg>
+<arg>Thanks for submitting the form</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-02-02T18:22:37.198207" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Form Submitted Successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-02-02T18:22:37.198207" elapsed="0.000000"/>
+</kw>
+<arg>'${modal_title}' == 'Thanks for submitting the form'</arg>
+<arg>Log To Console</arg>
+<arg>Form Submitted Successfully</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-02-02T18:22:37.198207" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary" type="TEARDOWN">
+<msg time="2026-02-02T18:22:37.460044" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-02T18:22:37.206227" elapsed="0.253817"/>
+</kw>
+<tag>formtest</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2026-02-02T18:22:26.056179" elapsed="11.403865"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-02T18:22:37.465065" elapsed="3.291171"/>
+</kw>
+<status status="PASS" start="2026-02-02T18:22:11.726181" elapsed="29.030055"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">formtest</stat>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat name="Test Form" id="s1" pass="1" fail="0" skip="0">Test Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
