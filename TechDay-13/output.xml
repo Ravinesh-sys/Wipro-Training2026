@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.11.0 on win32)" generated="2026-02-02T00:12:26.940000" rpa="false" schemaversion="5">
+<suite id="s1" name="Browser" source="C:\Users\Ravinesh\PycharmProjects\PythonProject\TechDay-13\browser.robot">
+<test id="s1-t1" name="Verify Page Title and Capture Screenshot" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-02T00:12:27.150121" level="INFO">Opening browser 'chrome' to base url 'https://example.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-02T00:12:27.150121" elapsed="1.826452"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-02T00:12:28.976573" elapsed="0.062481"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-02-02T00:12:29.070310" level="INFO">Page title is 'Example Domain'.</msg>
+<arg>${TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-02-02T00:12:29.039054" elapsed="0.031256"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-02-02T00:12:29.446746" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-02-02T00:12:29.070310" elapsed="0.390116"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-02T00:12:29.460426" elapsed="2.251952"/>
+</kw>
+<status status="PASS" start="2026-02-02T00:12:27.150121" elapsed="4.562257"/>
+</test>
+<status status="PASS" start="2026-02-02T00:12:26.940000" elapsed="4.772378"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Browser" id="s1" pass="1" fail="0" skip="0">Browser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
