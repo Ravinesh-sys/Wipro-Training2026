@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.11.0 on win32)" generated="2026-01-30T18:34:39.130916" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot Basics" source="C:\Users\Ravinesh\PycharmProjects\PythonProject\Day-12\AssignmentDay-12\robot_basics.robot">
+<test id="s1-t1" name="Display User Information" line="9">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-30T18:34:39.162593" level="INFO">User name is Rahul</msg>
+<arg>User name is ${USERNAME}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-30T18:34:39.153079" elapsed="0.009514"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Welcome ${USERNAME}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T18:34:39.162593" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-01-30T18:34:39.153079" elapsed="0.009514"/>
+</test>
+<test id="s1-t2" name="Display Course List" line="13">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-30T18:34:39.162593" level="INFO">Available courses are ['Python', 'Selenium', 'RobotFramework']</msg>
+<arg>Available courses are ${COURSES}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-30T18:34:39.162593" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>First course is ${COURSES}[0]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T18:34:39.162593" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-01-30T18:34:39.162593" elapsed="0.006511"/>
+</test>
+<status status="PASS" start="2026-01-30T18:34:39.130916" elapsed="0.038188"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot Basics" id="s1" pass="2" fail="0" skip="0">Robot Basics</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

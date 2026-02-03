@@ -1,0 +1,19 @@
+1769768816187	geckodriver	INFO	Listening on 127.0.0.1:55941
+1769768819273	mozrunner::runner	INFO	Running command: "C:\\Users\\Ravinesh\\.cache\\selenium\\firefox\\win64\\147.0.2\\firefox.exe" "--marionette" "--remote-debug ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Ravinesh\\AppData\\Local\\Temp\\rust_mozprofilezlNhRK"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1769768819828	Marionette	INFO	Marionette enabled
+1769768820219	Marionette	INFO	Listening on port 55949
+Read port: 55949
+WebDriver BiDi listening on ws://127.0.0.1:55942
+1769768820431	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Calling WaitFlushedEvent::Run: is delayed: 2830
+1769768850165	Marionette	INFO	Stopped listening on port 55949
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/UpdateService.sys.mjs, line 5603: 
+1769768851301	addons.xpi	ERROR	System addon update list error [Exception... "<no message>"  nsresult: "0x8046001e (<unknown>)"  location: "JS frame :: resource://gre/modules/ServiceRequest.sys.mjs :: open :: line 126"  data: no]
+console.error: (new Error("Polling for changes failed: .", "resource://services-settings/remote-settings.sys.mjs", 482))
+console.error: Region.sys.mjs: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", "resource://gre/modules/Region.sys.mjs", 730))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.sys.mjs", 396))

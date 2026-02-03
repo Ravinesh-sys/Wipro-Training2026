@@ -1,0 +1,18 @@
+1769768442504	geckodriver	INFO	Listening on 127.0.0.1:57530
+1769768445561	mozrunner::runner	INFO	Running command: "C:\\Users\\Ravinesh\\.cache\\selenium\\firefox\\win64\\147.0.2\\firefox.exe" "--marionette" "--remote-debug ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Ravinesh\\AppData\\Local\\Temp\\rust_mozprofileYvL6Jh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1769768446102	Marionette	INFO	Marionette enabled
+1769768446260	Marionette	INFO	Listening on port 57538
+Read port: 57538
+WebDriver BiDi listening on ws://127.0.0.1:57531
+1769768446362	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Calling WaitFlushedEvent::Run: is delayed: 2976
+1769768463640	Marionette	INFO	Stopped listening on port 57538
+Dynamically enable window occlusion 1
+JavaScript warning: https://opensource-demo.orangehrmlive.com/web/dist/js/chunk-vendors.js?v=1763650546848, line 123: Script terminated by timeout at:
+Wl@https://opensource-demo.orangehrmlive.com/web/dist/js/chunk-vendors.js?v=1763650546848:123:50035
+n@https://opensource-demo.orangehrmlive.com/web/dist/js/chunk-vendors.js?v=1763650546848:123:49807
+
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.

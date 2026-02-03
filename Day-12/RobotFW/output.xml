@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.11.0 on win32)" generated="2026-01-30T15:56:54.463603" rpa="false" schemaversion="5">
+<suite id="s1" name="TC006 DDExcel" source="C:\Users\Ravinesh\PycharmProjects\PythonProject\Day-12\RobotFW\TC006_DDExcel.robot">
+<kw name="Open OrangeHRM" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-30T15:56:55.983735" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-30T15:56:55.983735" elapsed="30.821136"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-30T15:57:26.806074" elapsed="0.343989"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-01-30T15:57:30.153487" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-01-30T15:57:27.150587" elapsed="3.003482"/>
+</kw>
+<status status="PASS" start="2026-01-30T15:56:55.983735" elapsed="34.170582"/>
+</kw>
+<test id="s1-t1" name="TC006_DDExcel_Login" line="13">
+<status status="FAIL" start="2026-01-30T15:57:30.154317" elapsed="0.000000">Test cannot be empty.</status>
+</test>
+<kw name="Close OrangeHRM" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-30T15:57:30.154317" elapsed="3.652698"/>
+</kw>
+<status status="PASS" start="2026-01-30T15:57:30.154317" elapsed="3.652698"/>
+</kw>
+<status status="FAIL" start="2026-01-30T15:56:54.469346" elapsed="39.337669"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TC006 DDExcel" id="s1" pass="0" fail="1" skip="0">TC006 DDExcel</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-01-30T15:56:55.978627" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\Users\Ravinesh\PycharmProjects\PythonProject\Day-12\RobotFW\TC006_DDExcel.robot", line 0</msg>
+<msg time="2026-01-30T15:56:55.978627" level="ERROR">In source file:
+  File "testdata.xlsx", line 0</msg>
+<msg time="2026-01-30T15:56:55.983735" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: ValueError: Unassigned requiered argument detected: ${username}.</msg>
+</errors>
+</robot>

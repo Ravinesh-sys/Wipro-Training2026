@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.11.0 on win32)" generated="2026-01-31T12:35:46.561780" rpa="false" schemaversion="5">
+<suite id="s1" name="Test2" source="C:\Users\Ravinesh\PycharmProjects\PythonProject\Day-12\AssignmentDay-12\Q2\test2.robot">
+<test id="s1-t1" name="Verify Test Automation Environment" line="7">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>===== ENVIRONMENT VERIFICATION STARTED =====</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-31T12:35:46.782681" elapsed="0.000000"/>
+</kw>
+<kw name="Run Process" owner="Process">
+<msg time="2026-01-31T12:35:46.782681" level="INFO">Starting process:
+python --version</msg>
+<msg time="2026-01-31T12:35:46.790335" level="INFO">Waiting for process to complete.</msg>
+<msg time="2026-01-31T12:35:46.797366" level="INFO">Process completed.</msg>
+<msg time="2026-01-31T12:35:46.799177" level="INFO">${py_result} = &lt;result object with rc 0&gt;</msg>
+<var>${py_result}</var>
+<arg>python</arg>
+<arg>--version</arg>
+<arg>stdout=PIPE</arg>
+<arg>stderr=PIPE</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2026-01-31T12:35:46.782681" elapsed="0.016496"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${py_result.rc}' != '0'</arg>
+<arg>Fail</arg>
+<arg>Python is NOT installed or not in PATH</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2026-01-31T12:35:46.799177" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Python Version: ${py_result.stdout}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-31T12:35:46.799177" elapsed="0.000000"/>
+</kw>
+<kw name="Run Process" owner="Process">
+<msg time="2026-01-31T12:35:46.799177" level="INFO">Starting process:
+python -m robot --version</msg>
+<msg time="2026-01-31T12:35:46.799177" level="INFO">Waiting for process to complete.</msg>
+<msg time="2026-01-31T12:35:47.047959" level="INFO">Process completed.</msg>
+<msg time="2026-01-31T12:35:47.047959" level="INFO">${rf_result} = &lt;result object with rc 251&gt;</msg>
+<var>${rf_result}</var>
+<arg>python</arg>
+<arg>-m</arg>
+<arg>robot</arg>
+<arg>--version</arg>
+<arg>stdout=PIPE</arg>
+<arg>stderr=PIPE</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2026-01-31T12:35:46.799177" elapsed="0.248782"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-31T12:35:47.047959" level="INFO">SeleniumLibrary imported successfully</msg>
+<arg>SeleniumLibrary imported successfully</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-31T12:35:47.047959" elapsed="0.000000"/>
+</kw>
+<arg>Log</arg>
+<arg>SeleniumLibrary imported successfully</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<status status="PASS" start="2026-01-31T12:35:47.047959" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>SeleniumLibrary is available</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-31T12:35:47.047959" elapsed="0.000000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>===== ENVIRONMENT VERIFICATION COMPLETED SUCCESSFULLY =====</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-31T12:35:47.047959" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-01-31T12:35:46.782681" elapsed="0.265278"/>
+</test>
+<status status="PASS" start="2026-01-31T12:35:46.561780" elapsed="0.486179"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test2" id="s1" pass="1" fail="0" skip="0">Test2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
