@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.11.0 on win32)" generated="2026-01-30T17:43:11.431855" rpa="false" schemaversion="5">
+<suite id="s1" name="Q2Test" source="C:\Users\Ravinesh\PycharmProjects\PythonProject\AssignmentDay-13\Q2Test.robot">
+<test id="s1-t1" name="Verify Page Title and Capture Screenshot" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-30T17:43:11.776173" level="INFO">Opening browser 'chrome' to base url 'https://example.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-30T17:43:11.776173" elapsed="1.913297"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2026-01-30T17:43:13.719326" level="INFO">Page title is 'Example Domain'.</msg>
+<arg>${TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2026-01-30T17:43:13.689470" elapsed="0.029856"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-01-30T17:43:13.990463" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-01-30T17:43:13.724342" elapsed="0.267124"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-30T17:43:13.992483" elapsed="2.616918"/>
+</kw>
+<status status="PASS" start="2026-01-30T17:43:11.769203" elapsed="4.840198"/>
+</test>
+<status status="PASS" start="2026-01-30T17:43:11.439374" elapsed="5.179980"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Q2Test" id="s1" pass="1" fail="0" skip="0">Q2Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
